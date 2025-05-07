@@ -13,7 +13,7 @@ A distributed, event-driven fraud detection system built with Go and Redis Strea
 ---
 
 ## Architecture
-```mermaid
+
 flowchart LR
     A[Payment Gateway] -->|HTTP| B[Producer (Go)]
     B -->|Redis Stream| C[transactions:raw]
