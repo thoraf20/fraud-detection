@@ -50,7 +50,7 @@ PostgreSQL 15+
 ## Quick Start (Local)
 
 # Clone the repo
-git clone https://github.com/yourusername/fraud-detection-go.git
+git clone https://github.com/thoraf20/fraud-detection.git
 cd fraud-detection
 
 # Build and run producer + consumers
