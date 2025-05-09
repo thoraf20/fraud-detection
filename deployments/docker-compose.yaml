@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  redis:
+    image: redis/redis-stack-server:7.2.0
+    ports:
+      - "6379:6379"
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+volumes:
+  pg_data:
